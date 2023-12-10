@@ -1,0 +1,10 @@
+{
+    "name": "salfel/advent_of_code",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "AOC\\": "src/"
+        }
+    },
+    "require": {}
+}
