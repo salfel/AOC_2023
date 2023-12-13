@@ -6,9 +6,12 @@ abstract class Base
 {
     protected array $data;
 
+    protected int $part;
+
     public function __construct(protected string $title, int $day)
     {
         $this->data = preg_split('/\n/', file_get_contents('./src/inputs/day'.$day.'.txt'));
+        $this->part = 1;
     }
 
     public function run(bool $test = false): void
@@ -24,6 +27,7 @@ abstract class Base
             $this->testData(2);
         }
 
+        $this->part = 2;
         echo 'Part 2: ';
         echo $this->part2().PHP_EOL;
     }
