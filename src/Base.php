@@ -32,7 +32,7 @@ abstract class Base
         echo $this->part2().PHP_EOL;
     }
 
-    abstract protected function part1(): string;
+     abstract protected function part1(): string;
 
     abstract protected function part2(): string;
 
